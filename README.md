@@ -1,5 +1,7 @@
 # Ljudpressor
 
+An audio compressor turns down loud peaks, narrowing the gap between quiet and loud sounds. This makes it easier to hear quiet dialogue at a comfortable volume without sudden music or sound effects being too loud.
+
 Ljudpressor is a browser extension for compressing the current tab's audio. Its toolbar dropdown has an on/off switch for the current tab and a simple strength slider. Captured sound is routed back to your speakers through a Web Audio dynamics compressor. Each tab can be switched independently; the same settings apply to all active tabs.
 
 ## Install
