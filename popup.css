@@ -1,0 +1,20 @@
+:root { color-scheme: light dark; font: 14px/1.45 system-ui, sans-serif; }
+body { margin: 0; width: 310px; background: Canvas; color: CanvasText; }
+main { padding: 16px; }
+h1 { font-size: 17px; margin: 0 0 18px; }
+.toggle-row, .slider-label, .range-labels { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.toggle-row { font-weight: 650; padding: 0 0 16px; border-bottom: 1px solid #8886; }
+#enabled { appearance: none; flex: none; width: 40px; height: 23px; border-radius: 20px; background: #888; cursor: pointer; position: relative; margin: 0; }
+#enabled::before { content: ''; position: absolute; left: 3px; top: 3px; width: 17px; height: 17px; border-radius: 50%; background: white; transition: transform .15s; }
+#enabled:checked { background: #247a46; }
+#enabled:checked::before { transform: translateX(17px); }
+#enabled:disabled { opacity: .5; cursor: wait; }
+#enabled:focus-visible, button:focus-visible, #strength:focus-visible { outline: 2px solid #297a4a; outline-offset: 3px; }
+.slider-label { margin: 18px 0 8px; }
+#strength { width: 100%; margin: 0; accent-color: #247a46; }
+.range-labels { font-size: 12px; opacity: .75; }
+#strength-value { font-variant-numeric: tabular-nums; }
+#status { min-height: 2.8em; color: #666; margin: 14px 0 7px; }
+@media (prefers-color-scheme: dark) { #status { color: #bbb; } }
+#advanced { border: 0; border-top: 1px solid #8886; background: transparent; color: inherit; padding: 12px 0 0; text-align: left; cursor: pointer; width: 100%; font: inherit; }
+#advanced:hover { text-decoration: underline; }

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Ljudpressor",
+  "version": "1.0.0",
+  "description": "Compress the current tab's audio. Toggle it and adjust strength from the toolbar dropdown.",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabCapture", "activeTab", "offscreen", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open Ljudpressor controls",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

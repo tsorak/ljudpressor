@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ljudpressor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Ljudpressor</h1>
+    <label class="toggle-row" for="enabled">
+      <span>Compress this tab</span>
+      <input id="enabled" type="checkbox" role="switch" disabled>
+    </label>
+    <label class="slider-label" for="strength">
+      <span>Compression strength</span><output id="strength-value" for="strength">50%</output>
+    </label>
+    <input id="strength" type="range" min="0" max="100" step="1" disabled>
+    <div class="range-labels"><span>Low</span><span>High</span></div>
+    <p id="status" role="status" aria-live="polite">Loading…</p>
+    <button id="advanced" type="button">Advanced settings ↗</button>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
